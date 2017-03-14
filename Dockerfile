@@ -9,7 +9,7 @@ RUN mix local.hex --force
 RUN mix local.rebar --force
 
 # Install the Phoenix framework itself
-RUN mix archive.install --force https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez
+RUN mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez --force
 
 # Install NodeJS 6.x and the NPM
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
